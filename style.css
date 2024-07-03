@@ -63,10 +63,9 @@ body {
 #es-garnier.es-garnier .es-kv__text {
   position: absolute;
   text-align: center;
-  margin-top: 20px;
   position: absolute;
-  left: 53%;
-  top: 35%;
+  left: 55%;
+  top: 33%;
 }
 #es-garnier.es-garnier .es-kv__img {
   display: block;
@@ -77,6 +76,7 @@ body {
 }
 #es-garnier.es-garnier .es-kv__title {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   line-height: inherit;
   color: inherit;
@@ -89,13 +89,12 @@ body {
   z-index: 1;
   text-align: left;
 }
-#es-garnier.es-garnier .es-kv__title span {
-  font-size: 2.25em;
-}
 #es-garnier.es-garnier .es-kv__subtitle {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  padding-left: 10px;
+  font-size: 11px;
+  margin-bottom: 3px;
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
@@ -103,6 +102,14 @@ body {
   letter-spacing: -1px;
   text-align: left;
   color: #000;
+}
+#es-garnier.es-garnier .es-kv__subtitle::before {
+  position: absolute;
+  content: url("./img/point.svg");
+  width: 1px;
+  height: 1px;
+  top: -3px;
+  left: -3px;
 }
 #es-garnier.es-garnier .es-kv__subtitle--crossed {
   text-decoration: line-through;
@@ -124,6 +131,43 @@ body {
 #es-garnier.es-garnier .es-kv__accent2 span {
   font-weight: 600;
   font-size: 22px;
+}
+#es-garnier.es-garnier .es-kv__label {
+  color: #000;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  margin-bottom: 50px;
+  min-width: 160px;
+  max-width: 225px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#es-garnier.es-garnier .es-kv__label-percent {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+#es-garnier.es-garnier .es-kv__label::before {
+  position: absolute;
+  content: "";
+  background: url("./img/label-bracket.png") no-repeat;
+  width: 25px;
+  height: 125px;
+  left: 0;
+  top: 0;
+}
+#es-garnier.es-garnier .es-kv__label::after {
+  position: absolute;
+  content: "";
+  background: url("./img/label-bracket.png") no-repeat;
+  transform: rotate(180deg);
+  width: 25px;
+  height: 125px;
+  right: 0;
+  top: 0;
 }
 #es-garnier.es-garnier .es-kv__details {
   margin: 0;
@@ -147,7 +191,8 @@ body {
     margin-bottom: 20px;
   }
   #es-garnier.es-garnier .es-kv__subtitle {
-    font-size: 18px;
+    font-size: 12px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -157,13 +202,29 @@ body {
   #es-garnier.es-garnier .es-kv__container {
     display: flex;
     justify-content: center;
+    position: relative;
+  }
+  #es-garnier.es-garnier .es-kv__label {
+    position: absolute;
+    left: 48%;
+    top: 25%;
+    z-index: 10;
+    font-size: 13px;
+  }
+  #es-garnier.es-garnier .es-kv__label-percent {
+    margin-bottom: 0;
+  }
+  #es-garnier.es-garnier .es-kv__label::before, #es-garnier.es-garnier .es-kv__label::after {
+    background-size: 80%;
+    height: 100px;
   }
   #es-garnier.es-garnier .es-kv__title {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   #es-garnier.es-garnier .es-kv__subtitle {
-    font-size: 22px;
+    font-size: 16px;
+    margin-left: 10px;
   }
   #es-garnier.es-garnier .es-kv__photo {
     display: flex;
@@ -206,8 +267,8 @@ body {
 #es-garnier.es-garnier .es-ingredients__packshot::before {
   content: "przed";
   position: absolute;
-  top: 10%;
-  left: 11%;
+  bottom: 25%;
+  left: 20%;
   font-weight: 700;
   font-size: 12px;
   color: #fff;
@@ -217,8 +278,8 @@ body {
 #es-garnier.es-garnier .es-ingredients__packshot::after {
   content: "po";
   position: absolute;
-  top: 10%;
-  right: 15%;
+  bottom: 25%;
+  right: 25%;
   font-weight: 700;
   font-size: 12px;
   color: #fff;
@@ -228,15 +289,17 @@ body {
 #es-garnier.es-garnier .es-ingredients__cards {
   margin: 32px auto;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   max-width: 460px;
 }
 #es-garnier.es-garnier .es-ingredients__single {
   flex: 1;
   flex-basis: 50%;
   margin: 8px;
-  max-width: 212px;
+  min-width: 212px;
   max-height: 240px;
   padding: 24px 8px;
   background: #fff;
@@ -261,6 +324,14 @@ body {
 #es-garnier.es-garnier .es-ingredients__title {
   text-transform: uppercase;
   text-align: center;
+}
+#es-garnier.es-garnier .es-ingredients__img-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0499c3;
 }
 #es-garnier.es-garnier .es-ingredients__link {
   line-height: inherit;
@@ -309,12 +380,113 @@ body {
   text-align: center;
   width: 100%;
 }
+@media screen and (min-width: 500px) {
+  #es-garnier.es-garnier .es-ingredients__cards {
+    flex-direction: row;
+    max-width: 300px;
+    flex-wrap: nowrap;
+  }
+}
 @media screen and (min-width: 600px) {
   #es-garnier.es-garnier .es-ingredients__packshot::before {
-    left: 20%;
+    left: 28%;
+    font-size: 18px;
+    font-weight: 600;
   }
   #es-garnier.es-garnier .es-ingredients__packshot::after {
-    right: 20%;
+    right: 26%;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 850px) {
+  #es-garnier.es-garnier .es-ingredients__cards {
+    flex-direction: column;
+    max-width: 300px;
+    flex-wrap: wrap;
+  }
+  #es-garnier.es-garnier .es-ingredients__img-title {
+    display: block;
+    margin-left: -10%;
+    margin-top: -20px;
+    text-align: center;
+  }
+}
+#es-garnier.es-garnier .es-active-ingredients__title {
+  text-transform: uppercase;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-active-ingredients__item {
+  margin-bottom: 20px;
+}
+#es-garnier.es-garnier .es-active-ingredients__item-title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 8px 0;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-active-ingredients__item-description {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 0;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-active-ingredients__image {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+#es-garnier.es-garnier .es-active-ingredients__image--desktop {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  #es-garnier.es-garnier .es-active-ingredients__container {
+    position: relative;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item {
+    position: absolute;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item--left {
+    top: 50%;
+    left: 2%;
+    transform: translate(0, -50%);
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item--right {
+    right: 2%;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--blue {
+    text-align: left;
+    color: #0499c3;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--white {
+    text-align: right;
+    color: #fff;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-description {
+    font-size: 12px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-description--right {
+    text-align: right;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__image--mobile {
+    display: none;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__image--desktop {
+    display: block;
   }
 }
 #es-garnier.es-garnier .es-apply {
@@ -787,9 +959,11 @@ body {
     margin: 0 auto;
   }
   #es-garnier.es-garnier .es-ingredients__title {
-    margin-bottom: 40px;
+    margin-left: 10%;
+    text-align: left;
   }
   #es-garnier.es-garnier .es-ingredients__container {
+    margin-top: -30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -810,7 +984,11 @@ body {
   }
   #es-garnier.es-garnier .es-ingredients__cards {
     margin: 0;
-    background: url("./img/bg-ingr.png") no-repeat center center;
+    margin-top: -150px;
+    margin-left: -50px;
+    background: url("./img/bg-ingr.png") no-repeat 10px center;
+    background-size: 90%;
+    z-index: 10;
   }
   #es-garnier.es-garnier .es-ingredients__disclaimer {
     text-align: left;
@@ -925,11 +1103,11 @@ body {
     z-index: 3;
   }
   #es-garnier.es-garnier .es-ingredients__packshot::before {
-    left: 15%;
+    left: 30%;
     font-size: 15px;
   }
   #es-garnier.es-garnier .es-ingredients__packshot::after {
-    right: 17%;
+    right: 26%;
     font-size: 15px;
   }
 }
