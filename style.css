@@ -105,7 +105,7 @@ body {
 }
 #es-garnier.es-garnier .es-kv__subtitle::before {
   position: absolute;
-  content: url("./img/point.svg");
+  content: url("./img/point.png");
   width: 1px;
   height: 1px;
   top: -3px;
@@ -219,7 +219,7 @@ body {
     height: 100px;
   }
   #es-garnier.es-garnier .es-kv__title {
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 25px;
   }
   #es-garnier.es-garnier .es-kv__subtitle {
@@ -457,10 +457,12 @@ body {
   }
   #es-garnier.es-garnier .es-active-ingredients__item {
     position: absolute;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   #es-garnier.es-garnier .es-active-ingredients__item--left {
     top: 50%;
-    left: 2%;
+    left: 8%;
     transform: translate(0, -50%);
   }
   #es-garnier.es-garnier .es-active-ingredients__item--right {
@@ -468,16 +470,69 @@ body {
     top: 50%;
     transform: translate(0%, -50%);
   }
+  #es-garnier.es-garnier .es-active-ingredients__item-title {
+    margin-bottom: 35px;
+  }
   #es-garnier.es-garnier .es-active-ingredients__item-title--blue {
     text-align: left;
     color: #0499c3;
+    position: relative;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--blue::before {
+    position: absolute;
+    content: "";
+    background: url("./img/active-bracket-blue-before.png") no-repeat;
+    display: block;
+    top: -15px;
+    left: -20px;
+    width: 30px;
+    height: 65px;
+    background-size: 74%;
+    margin-bottom: 10px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--blue::after {
+    position: absolute;
+    content: "";
+    background: url("./img/active-bracket-blue-after.png") no-repeat;
+    display: block;
+    top: -15px;
+    right: -45%;
+    width: 209px;
+    height: 65px;
+    background-size: 70%;
+    margin-bottom: 10px;
   }
   #es-garnier.es-garnier .es-active-ingredients__item-title--white {
     text-align: right;
     color: #fff;
   }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--white::before {
+    position: absolute;
+    content: "";
+    background: url("./img/active-bracket-white-before.png") no-repeat;
+    display: block;
+    top: -6px;
+    right: 49%;
+    width: 208px;
+    height: 67px;
+    background-size: 74%;
+    margin-bottom: 10px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--white::after {
+    position: absolute;
+    content: "";
+    background: url("./img/active-bracket-white-after.png") no-repeat;
+    display: block;
+    top: -6px;
+    right: -14%;
+    width: 32px;
+    height: 65px;
+    background-size: 74%;
+    margin-bottom: 10px;
+  }
   #es-garnier.es-garnier .es-active-ingredients__item-description {
     font-size: 12px;
+    margin-left: -20px;
   }
   #es-garnier.es-garnier .es-active-ingredients__item-description--right {
     text-align: right;
@@ -487,6 +542,19 @@ body {
   }
   #es-garnier.es-garnier .es-active-ingredients__image--desktop {
     display: block;
+  }
+}
+@media screen and (min-width: 850px) {
+  #es-garnier.es-garnier .es-active-ingredients__item-description {
+    font-size: 14px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item--left {
+    top: 50%;
+    left: 12%;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item--right {
+    right: 8%;
+    top: 50%;
   }
 }
 #es-garnier.es-garnier .es-apply {
@@ -536,7 +604,7 @@ body {
   font-family: inherit;
   font-weight: inherit;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   margin: 8px 0;
   margin-bottom: 0;
 }
@@ -577,10 +645,10 @@ body {
   padding: 16px;
 }
 #es-garnier.es-garnier .es-routine__title {
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
   color: #000;
-  text-align: left;
+  text-align: center;
 }
 #es-garnier.es-garnier .es-routine__title > span {
   color: #c64a4a;
@@ -590,6 +658,9 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 50px;
+}
+#es-garnier.es-garnier .es-routine__step-compare {
+  padding-top: 30px;
 }
 #es-garnier.es-garnier .es-routine__bg-img {
   display: block;
@@ -622,6 +693,7 @@ body {
   display: block;
   width: 230px;
   margin: 0 auto;
+  margin-right: 20px;
   padding: 12px 60px;
 }
 #es-garnier.es-garnier .es-routine__step-title {
@@ -639,8 +711,54 @@ body {
 }
 #es-garnier.es-garnier .es-routine__step-description {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   color: #000;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-routine__step-item-title {
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #0499c3;
+  text-align: center;
+  background-color: #fff;
+}
+#es-garnier.es-garnier .es-routine__step-compare {
+  background: linear-gradient(to right, #85cfec 0%, #85cfec 50%, #fee955 50%, #fee955 100%);
+}
+#es-garnier.es-garnier .es-routine__step-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+#es-garnier.es-garnier .es-routine__step-group-item {
+  min-width: 150px;
+  max-width: 150px;
+  font-size: 11px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-routine__step-image {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+@media screen and (min-width: 700px) {
+  #es-garnier.es-garnier .es-routine__step-compare {
+    min-width: 475px;
+  }
+  #es-garnier.es-garnier .es-routine__step-group-item {
+    min-width: 240px;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 998px) {
+  #es-garnier.es-garnier .es-routine__steps {
+    background: linear-gradient(to right, #85cfec 0%, #85cfec 50%, #fee955 50%, #fee955 100%);
+  }
 }
 #es-garnier.es-garnier .es-cross {
   position: relative;
@@ -728,6 +846,60 @@ body {
   padding: 0 16px;
   min-height: 50px;
 }
+#es-garnier.es-garnier .es-cross__steps-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#es-garnier.es-garnier .es-cross__steps-container-inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 725px;
+  margin: 0 auto;
+}
+#es-garnier.es-garnier .es-cross__steps-item {
+  min-width: 250px;
+  padding-left: 20px;
+}
+#es-garnier.es-garnier .es-cross__steps-item--1 {
+  order: 1;
+}
+#es-garnier.es-garnier .es-cross__steps-item--2 {
+  order: 2;
+}
+#es-garnier.es-garnier .es-cross__steps-item--3 {
+  order: 3;
+}
+#es-garnier.es-garnier .es-cross__steps-item--4 {
+  order: 4;
+}
+#es-garnier.es-garnier .es-cross__steps-container {
+  background-color: #83cee3;
+}
+#es-garnier.es-garnier .es-cross__steps-item-title {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0;
+}
+#es-garnier.es-garnier .es-cross__steps-item-description {
+  display: block;
+  color: #000;
+  font-weight: 600;
+  font-size: 12px;
+}
+#es-garnier.es-garnier .es-cross__steps-item-step {
+  max-width: 156px;
+  margin-bottom: 0;
+  display: block;
+  padding: 10px 44px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #0499c3;
+  background-color: #b6e1ef;
+}
 #es-garnier.es-garnier .es-cross__link {
   margin: 0;
   padding: 0;
@@ -752,7 +924,7 @@ body {
   background: #e61313;
 }
 #es-garnier.es-garnier .es-cross__img {
-  max-width: 100%;
+  max-width: 80%;
   display: block;
   margin: 0 auto;
   transition: all 0.3s ease-in-out;
@@ -779,7 +951,6 @@ body {
 }
 #es-garnier.es-garnier .es-footer {
   padding: 0;
-  padding-top: 48px;
   position: relative;
   z-index: 0;
 }
@@ -874,7 +1045,7 @@ body {
     margin-bottom: 32px;
   }
   #es-garnier.es-garnier .es-cross__text {
-    min-height: 50px;
+    min-height: 65px;
   }
   #es-garnier.es-garnier .es-cross__container {
     display: flex;
@@ -914,6 +1085,7 @@ body {
   #es-garnier.es-garnier .es-cross__container {
     max-width: 600px;
     margin: 0 auto;
+    margin-top: 50px;
   }
   #es-garnier.es-garnier .es-cross__texts {
     display: flex;
@@ -931,16 +1103,8 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  #es-garnier.es-garnier .es-routine__steps {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
-  }
   #es-garnier.es-garnier .es-routine__step-description {
-    margin-bottom: 50px;
-  }
-  #es-garnier.es-garnier .es-routine__step-description--2 {
-    text-align: right;
+    margin-top: -50px;
   }
   #es-garnier.es-garnier .es-routine__step-title--2 {
     margin-left: auto;
@@ -951,6 +1115,7 @@ body {
     max-width: 300px;
   }
   #es-garnier.es-garnier .es-routine__link {
+    margin-top: 30px;
     width: 180px;
   }
 }
@@ -999,6 +1164,88 @@ body {
   #es-garnier.es-garnier .es-ingredients__single {
     width: 220px;
     height: 240px;
+  }
+  #es-garnier.es-garnier .es-cross__steps-container {
+    background: url(./img/steps-bg.png) no-repeat center;
+    background-size: cover;
+    min-height: 600px;
+  }
+  #es-garnier.es-garnier .es-cross__steps-container-inner {
+    justify-content: space-between;
+    row-gap: 30px;
+    max-width: none;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item {
+    min-width: 350px;
+    position: relative;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--1::after {
+    content: "";
+    position: absolute;
+    background: url("./img/steps-line.png") no-repeat center;
+    width: 260px;
+    height: 2px;
+    bottom: 0;
+    left: 5%;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--2 {
+    order: 3;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--2::after {
+    content: "";
+    position: absolute;
+    background: url("./img/steps-line.png") no-repeat center;
+    width: 500px;
+    height: 2px;
+    bottom: 0;
+    left: -30px;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--3 {
+    order: 4;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--3::after {
+    content: "";
+    position: absolute;
+    background: url("./img/steps-line.png") no-repeat center;
+    width: 330px;
+    height: 2px;
+    bottom: 0;
+    left: 5%;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--4 {
+    order: 2;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--4::after {
+    content: "";
+    position: absolute;
+    background: url("./img/steps-line.png") no-repeat center;
+    width: 275px;
+    height: 2px;
+    bottom: 0;
+    left: 22%;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item-step {
+    text-align: right;
+    margin-right: 0;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item-title {
+    text-align: right;
+    margin-right: 0;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item-description--right {
+    text-align: right;
   }
 }
 @media screen and (min-width: 998px) {
@@ -1077,13 +1324,12 @@ body {
   }
   #es-garnier.es-garnier .es-routine {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   #es-garnier.es-garnier .es-routine__steps {
-    margin-top: -100px;
-  }
-  #es-garnier.es-garnier .es-routine__step {
-    margin-top: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
   }
   #es-garnier.es-garnier .es-routine__bg-img--mobile {
     display: none;
