@@ -81,10 +81,6 @@ body {
       text-align: left;
     }
 
-    &__title span {
-      // font-size: 16px;
-    }
-
     &__subtitle {
       margin: 0;
       padding: 0;
@@ -645,120 +641,20 @@ body {
           top: 50%;
         }
       }
+      &__item-title {
+        &--blue {
+          &::after {
+            right: -25%;
+          }
+        }
+        &--white {
+          &::before {
+            right: 40%;
+          }
+        }
+      }
     }
   }
-
-  /*********************************************/
-  /********* results section styles ***********/
-  /*********************************************/
-  // .es-results {
-  //   margin: 50px 0;
-  //   position: relative;
-
-  //   &__container {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //     justify-content: center;
-  //     align-items: center;
-  //     background-color: #f3f3f3;
-  //   }
-  //   &__title {
-  //     text-align: left;
-  //     text-transform: uppercase;
-  //     font-family: inherit;
-  //     font-size: 18px;
-  //   }
-  //   &__package {
-  //     padding: 20px 50px;
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center;
-  //     align-items: flex-start;
-  //     gap: 10px;
-  //   }
-  //   &__single {
-  //     display: flex;
-  //     align-items: center;
-  //   }
-  //   &__single p {
-  //     font-size: 12px;
-  //     margin-top: 1px;
-  //   }
-
-  //   &__number {
-  //     margin-right: 10px;
-  //     margin-top: -10px;
-  //   }
-
-  //   &__effect {
-  //     width: 90%;
-  //     margin: 8% auto;
-  //     margin-left: 0;
-  //     background-color: rgba(234, 96, 19, 0.93);
-  //     color: white;
-  //     border-radius: 8px;
-  //     padding: 10px 10px 10px 90px;
-  //   }
-
-  //   &__effect .es-results__title {
-  //     color: white;
-  //     font-size: 20px;
-  //   }
-
-  //   &__effect .es-results__single span {
-  //     font-weight: 800;
-  //     font-size: 24px;
-  //   }
-
-  //   &__bg-right::before {
-  //     content: url(./img/results-packshot.png);
-  //     position: absolute;
-  //     z-index: 999;
-  //     right: -50%;
-  //     top: -38%;
-  //     scale: 0.75;
-  //     transition: all 0.5s ease;
-  //   }
-
-  //   &__bg-right:hover::before {
-  //     transform: translateX(15px);
-  //   }
-
-  //   &__bg-right {
-  //     background-image: url(./img/results-bg.png);
-  //     background-size: cover;
-  //     background-position: center;
-  //     background-repeat: no-repeat;
-  //   }
-
-  //   &__footer {
-  //     margin-top: 20px;
-  //   }
-
-  //   &__footer p {
-  //     font-size: x-small;
-  //     margin: 0;
-  //   }
-
-  //   @media screen and (min-width: 768px) {
-  //     &__title {
-  //       font-size: 22px;
-  //     }
-
-  //     &__package {
-  //       width: 50%;
-  //     }
-
-  //     &__bg-right::before {
-  //       left: 30%;
-  //     }
-
-  //     &__bg-right {
-  //       width: 50%;
-  //       height: 300px;
-  //     }
-  //   }
-  // }
 
   /*********************************************/
   /************ apply section styles ***********/
@@ -1181,7 +1077,7 @@ body {
     &__steps-item-title {
       display: inline-block;
       font-weight: 600;
-      font-size: 16px;
+      font-size: 15px;
       color: #fff;
       margin-bottom: 0;
     }
@@ -1507,9 +1403,6 @@ body {
         margin-top: -50px;
       }
 
-      &__step-description--2 {
-      }
-
       &__step-title--2 {
         margin-left: auto;
         margin-right: 0;
@@ -1621,7 +1514,6 @@ body {
             content: '';
             position: absolute;
             background: url('./img/steps-line.png') no-repeat center;
-            // background-size: 75%;
             width: 260px;
             height: 2px;
             bottom: 0;
@@ -1635,7 +1527,6 @@ body {
             content: '';
             position: absolute;
             background: url('./img/steps-line.png') no-repeat center;
-            // background-size: 75%;
             width: 500px;
             height: 2px;
             bottom: 0;
@@ -1783,25 +1674,6 @@ body {
         gap: 30px;
       }
 
-      &__steps {
-        // margin-top: -100px;
-      }
-
-      &__step {
-        // margin-top: 150px;
-      }
-
-      // &::after {
-      //   position: absolute;
-      //   content: '';
-      //   width: 96.5%;
-      //   height: 2px;
-      //   color: #c64a4a;
-      //   background: #c64a4a;
-      //   top: 74%;
-      //   left: 50%;
-      //   transform: translate(-50%, -50%);
-      // }
       &__bg-img--mobile {
         display: none;
       }

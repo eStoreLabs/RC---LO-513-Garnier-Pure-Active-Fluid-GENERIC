@@ -27,9 +27,6 @@ body {
   /************ ingredients styles *************/
   /*********************************************/
   /*********************************************/
-  /********* results section styles ***********/
-  /*********************************************/
-  /*********************************************/
   /************ apply section styles ***********/
   /*********************************************/
   /*********************************************/
@@ -556,6 +553,12 @@ body {
     right: 8%;
     top: 50%;
   }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--blue::after {
+    right: -25%;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--white::before {
+    right: 40%;
+  }
 }
 #es-garnier.es-garnier .es-apply {
   margin: 48px 0;
@@ -880,7 +883,7 @@ body {
 #es-garnier.es-garnier .es-cross__steps-item-title {
   display: inline-block;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
   margin-bottom: 0;
 }
