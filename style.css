@@ -317,6 +317,7 @@ body {
   font-size: 12px;
   padding-top: 16px;
   text-align: center;
+  font-weight: 600;
 }
 #es-garnier.es-garnier .es-ingredients__title {
   text-transform: uppercase;
