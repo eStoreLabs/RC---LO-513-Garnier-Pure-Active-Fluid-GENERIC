@@ -476,13 +476,11 @@ body {
       &__packshot::before {
         left: 15%;
         font-size: 18px;
-        font-weight: 600;
       }
 
       &__packshot::after {
-        right: 30%;
+        right: 33%;
         font-size: 18px;
-        font-weight: 600;
       }
     }
 
@@ -497,6 +495,17 @@ body {
         margin-left: -10%;
         margin-top: -20px;
         text-align: center;
+      }
+      &__packshot::before {
+        left: 25%;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      &__packshot::after {
+        right: 25%;
+        font-size: 18px;
+        font-weight: 600;
       }
     }
   }
@@ -1475,7 +1484,7 @@ body {
       padding-top: 150px;
       margin-top: -70px;
       background: url('./img/ingredients-circle.png') no-repeat;
-      background-size: 40%;
+      background-size: 32%;
       background-position: right 0%;
 
       &__title {
@@ -1515,10 +1524,22 @@ body {
       &__cards {
         margin: 0;
         margin-top: -150px;
-        margin-left: -50px;
+        // margin-left: -50px;
+        margin-right: 50px;
         background: url('./img/bg-ingr.png') no-repeat 10px center;
         background-size: 90%;
         z-index: 10;
+      }
+      &__img-title {
+        margin-left: -3%;
+        margin-top: -40px;
+
+        &--2 {
+          margin-top: -20px;
+        }
+      }
+      &__img-packshot {
+        margin-left: 50px;
       }
       &__disclaimer {
         text-align: left;
@@ -1750,12 +1771,12 @@ body {
     }
 
     .es-ingredients__packshot::before {
-      left: 30%;
+      left: 22%;
       font-size: 15px;
     }
 
     .es-ingredients__packshot::after {
-      right: 26%;
+      right: 23%;
       font-size: 15px;
     }
   }
