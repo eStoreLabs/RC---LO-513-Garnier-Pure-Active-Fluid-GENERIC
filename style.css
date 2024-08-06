@@ -1152,7 +1152,7 @@ body {
   #es-garnier.es-garnier .es-evaluation {
     max-width: 95%;
     margin: 0 auto;
-    background: url("../img/evaluation-bg.png") no-repeat right center;
+    background: url("./img/evaluation-bg.png") no-repeat right center;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -1173,7 +1173,7 @@ body {
     margin: 0 auto;
     padding-top: 150px;
     margin-top: -70px;
-    background: url(../img/ingredients-circle.png) no-repeat;
+    background: url("./img/ingredients-circle.png") no-repeat;
     background-size: 40%;
     background-position: right 0%;
   }
